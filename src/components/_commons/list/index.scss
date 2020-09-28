@@ -1,0 +1,17 @@
+.list {
+  display: block;
+  padding: 0;
+
+  &__li {
+    list-style: none;
+    
+    &--link {
+      cursor: pointer;
+    }
+    
+    &__label,
+    &__description {
+      display: block;
+    }
+  }
+}

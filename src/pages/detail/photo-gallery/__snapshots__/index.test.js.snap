@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should PhotoGallery to match snapshot 1`] = `
+<div
+  className="photoGallery "
+>
+  <figure>
+    <img
+      src="url-1"
+    />
+  </figure>
+  <span
+    className="thumbs"
+  >
+    <img
+      className="active"
+      onClick={[Function]}
+      src="url-1"
+    />
+    <img
+      className=""
+      onClick={[Function]}
+      src="url-2"
+    />
+  </span>
+</div>
+`;

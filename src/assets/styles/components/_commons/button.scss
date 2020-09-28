@@ -1,0 +1,80 @@
+
+.button {
+  @extend .text--bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: button(size);
+  transition: .3s;
+  outline: none;
+
+
+  &[type=link] {
+    color: button(inline, color);
+    text-decoration: none;
+    font-size: inherit;
+
+    &:hover, 
+    &:active,
+    &.active {
+      text-decoration: underline;
+      color: button(inline, colorHover);
+    }
+  }
+
+
+  &--primary {
+    height: 50px;
+    padding: 0 20px;
+    border: 0 none;
+    border-radius: 3px;
+    color: button(primary, color);
+    background: button(primary, bg);
+
+    &:hover,
+    &:active,
+    &.active {
+      background: button(primary, bgHover);
+    }
+
+    &:disabled,
+    &.disabled {
+      cursor: no-drop;
+      background: button(primary, bgDisabled);
+
+      &:hover,
+      &:active,
+      &.active {
+        background: button(primary, bgDisabled);
+      }
+    }
+  }
+
+  &--inline {
+    border: none;
+    background: transparent;
+    color: button(inline, color);
+    text-decoration: none;
+    font-size: inherit;
+
+    &:hover, 
+    &:active,
+    &.active {
+      text-decoration: underline;
+      color: button(inline, colorHover);
+    }
+
+    &:disabled,
+    &.disabled {
+      cursor: no-drop;
+      color: button(inline, colorDisabled);
+
+      &:hover,
+      &:active,
+      &.active {
+        color: button(inline, colorDisabled);
+      }
+    }
+  }
+}

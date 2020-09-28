@@ -1,0 +1,26 @@
+.photoGallery {
+  display: flex;
+  flex-direction: rows;
+  padding: 10px 0;
+  justify-content: space-between;
+
+  figure {
+    order: 2;
+    width: 100%;
+    text-align: center;
+  }
+
+  .thumbs {
+    order: 1;
+
+    img {
+      display: block;
+      margin: 0 10px 10px 0;
+      cursor: pointer;
+
+      &.active {
+        border-color: blue;
+      }
+    }
+  }
+}

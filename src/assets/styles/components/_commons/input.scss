@@ -1,0 +1,29 @@
+.input__container {
+
+  .input {
+    position: relative;
+    border: 1px solid form(input, border);
+    padding-right: 30px;
+    
+    input {
+      border: 0 none;
+      font-size: form(input, size);
+      line-height: form(input, size) + 20;
+      color: form(input, color);
+    }
+
+    .btn--clear {
+      @extend .text--normal;
+      
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: transparent;
+      border: 0 none;
+      width: 30px;
+      height: 100%;
+      font-size: form(input, size) + 5;
+      color: form(input, color);
+    }
+  }
+}

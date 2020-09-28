@@ -1,0 +1,31 @@
+@function color($color-name, $color-variant: null) {
+  @if ($color-variant != null) {
+    @return map-get(map-get($colors, $color-name), $color-variant);
+  } @else {
+    @return map-get($colors, $color-name);
+  }
+}
+
+@function button($button-name, $button-variant: null) {
+  @if ($button-variant != null) {
+    @return map-get(map-get($button, $button-name), $button-variant);
+  } @else {
+    @return map-get($button, $button-name);
+  }
+}
+
+@function form($form-name, $form-variant: null) {
+  @if ($form-variant != null) {
+    @return map-get(map-get($form, $form-name), $form-variant);
+  } @else {
+    @return map-get($form, $form-name);
+  }
+}
+
+@function fontsizes($font-size, $font-variant: null) {
+  @if ($font-variant != null) {
+    @return map-get(map-get($font-sizes, $font-size), $font-variant);
+  } @else {
+    @return map-get($font-sizes, $font-size);
+  }
+}

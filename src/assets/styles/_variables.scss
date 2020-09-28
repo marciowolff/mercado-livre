@@ -1,0 +1,100 @@
+/* Ajustando Cores*/
+
+/* Colors */
+$layout-bg: #EDEDED;
+$layoyt-bg-header: #ffe600;
+$color--primary: #555;
+$color--secondary: #3065b1;
+$color--border: #BCC6D6;
+$color--danger: #e53035;
+$color--warning: #ffca00;
+$color--success: #009f52;
+$color--text: #373737;
+$color--white: #FFF;
+/* --- */
+
+$font-sizes: (
+  regular: (
+    xlarge: 40px,
+    large: 18px,
+    base: 16px,
+    small: 14px,
+    xsmall: 12px
+  ),
+  heading: (
+    h1: 26px,
+    h2: 22px,
+    h3: 18px,
+    h4: 16px,
+    h5: 14px,
+    h6: 14px
+  ),
+) !default;
+
+$colors: (
+  primary: (
+    base: $color--primary,
+    ligth: $color--primary + 30,
+    dark: $color--primary - 30
+  ),
+  secondary: (
+    base: $color--secondary,
+    ligth: $color--secondary + 30,
+    dark: $color--secondary - 30,
+
+  ),
+  border: (
+    base: $color--border
+  ),
+  danger: $color--danger,
+  warning: $color--warning,
+  success: $color--success,
+  ligth: $layout-bg,
+  dark: $color--primary - 30,
+  text: $color--text
+);
+
+$card: (
+  title: (
+    size: map-get(map-get($font-sizes, heading), h2),
+    color: $color--secondary
+  ),
+  featured: (
+    headerBg: #e5eaf3
+  )
+);
+
+$layout-breakpoints: (
+  // Medium screen / tablet
+    md: 768px,
+  // Large screen / desktop
+    lg: 1024px,
+  // Extra large screen / wide desktop
+    xl: 1200px
+) !default;
+
+
+$form: (
+  input: (
+    size: map-get(map-get($font-sizes, regular), base),
+    color: map-get(map-get($colors, primary), base),
+    border: $color--border,
+    bg: $color--white,
+    disabled: $color--primary - 20
+  )
+);
+
+$button: (
+  size: map-get(map-get($font-sizes, regular), base),
+  primary: (
+    bg: map-get(map-get($colors, secondary), base),
+    color: map-get($colors, ligth),
+    bgHover: map-get(map-get($colors, secondary), dark),
+    bgDisabled: map-get(map-get($colors, secondary), ligth),
+  ),
+  inline: (
+    color: map-get(map-get($colors, secondary), base),
+    colorHover: map-get(map-get($colors, secondary), dark),
+    colorDisabled: map-get(map-get($colors, secondary), ligth),
+  )
+) !default;

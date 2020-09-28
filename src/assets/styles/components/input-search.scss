@@ -1,0 +1,25 @@
+.inputSearch__container {
+  border: 0;
+  background-color: form(input, bg);
+
+  .input__container {
+    padding: 10px 0 10px 10px;
+
+    .input {
+      border: none;    
+  
+      input {
+        font-size: form(input, size) + 4;
+        line-height: form(input, size) + 10;
+      }
+    }
+  }
+
+  .button--inline {
+    width: 52px;
+    padding: 0 14px 0 10px;
+    font-size: form(input, size) + 8;
+    background-color: $layout-bg;
+    @extend .text--bold;
+  }
+}

@@ -1,0 +1,28 @@
+@import '../../App.scss';
+
+#page__detail {
+  display: flex;
+  flex-flow: row wrap;
+  padding-top: 50px;
+
+  .photoGallery {
+    flex: 1 60%;
+  }
+
+  .details {
+    flex: 1 30%;
+    h1 { margin-bottom: 20px; }
+    h2 { font-size: fontsizes(regular, xlarge); }
+
+    .button { margin-top: 40px; width: 100%; }
+  }
+
+  .description {
+    flex: 1 100%;
+    margin-top: 30px;
+
+    h4 { margin-top: 20px; }
+  }
+
+  
+}

@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should List to match snapshot 1`] = `
+<span
+  className="loading  loading--icon"
+  id=""
+>
+  <svg
+    className="ico loading "
+    fill="none"
+    height="80"
+    stroke="currentColor"
+    viewBox="-4 -4 46 46"
+    width="80"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g
+      fill="none"
+      fillRule="evenodd"
+    >
+      <g
+        strokeWidth="5"
+        transform="translate(1 1)"
+      >
+        <circle
+          cx="18"
+          cy="18"
+          r="18"
+          strokeOpacity=".5"
+        />
+        <path
+          d="M36 18c0-9.94-8.06-18-18-18"
+        >
+          <animateTransform
+            attributeName="transform"
+            dur="1s"
+            from="0 18 18"
+            repeatCount="indefinite"
+            to="360 18 18"
+            type="rotate"
+          />
+        </path>
+      </g>
+    </g>
+  </svg>
+  <small>
+    carregando...
+  </small>
+</span>
+`;

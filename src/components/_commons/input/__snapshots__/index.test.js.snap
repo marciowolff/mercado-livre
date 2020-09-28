@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should Input to match snapshot 1`] = `
+<span
+  className="input__container "
+>
+  <label
+    className="label"
+    htmlFor="teste"
+  >
+    Texto
+  </label>
+  <span
+    className="input"
+  >
+    <input
+      handleChange={[MockFunction]}
+      id="teste"
+      type="text"
+    />
+  </span>
+</span>
+`;

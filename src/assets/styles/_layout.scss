@@ -1,0 +1,28 @@
+.page__container {
+  display: flex;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  max-width: map-get($layout-breakpoints, xl);
+  min-width: map-get($layout-breakpoints, md);
+}
+
+#page__header {
+  background-color: $layoyt-bg-header;
+
+  &__breadcrumb {
+    background-color: $layout-bg;
+
+    .button {
+      @extend .text--normal;
+      color: color(primary, base);
+    }
+  }
+}
+
+main {
+  &.page__container {
+    background-color: $color--white;
+    flex: 1;
+  }
+}

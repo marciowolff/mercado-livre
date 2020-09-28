@@ -1,0 +1,43 @@
+
+#page__header {
+  .page__container {
+    padding: 10px;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+  
+  .logoApp { 
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+  .inputSearch__container {
+    flex: 3 50%;
+  }
+
+  nav {
+    padding: 10px 0;
+    
+    li {
+      display: flex;
+
+      &:after {
+        margin: 0 5px;
+        content: ">";
+      }
+
+      &:last-child {
+        &:after { content: '' }
+        
+      }
+    }
+  }
+}
+
+main {
+  &.page__container {
+    padding-bottom: 70px;
+
+    > .loading { width: 60%; text-align: center; margin: auto; }
+  }
+}

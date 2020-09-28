@@ -1,0 +1,47 @@
+.loading {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  small { margin: 15px 0; }
+  
+  &.progress--bar {
+    width: 100%;
+    height: 5px;
+    background: #FFF;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: '';
+      display: block;
+      height: 100%;
+      background-color: #999;
+      opacity: 1;
+      
+      animation: inProgress 3s infinite;
+    }
+
+    &.hidden {
+      animation: fadeOut 1s ease-out both;
+
+      &:before {
+        width: 100%;
+        animation: progressFull .3s ease-out both;
+      }
+    }
+  }
+
+
+  @keyframes inProgress {
+    0% { width: 92%; }
+    100% { width: 95%; }
+  }
+
+  @keyframes progressFull {
+      0% { width: 92%; }
+      100% { width: 100%; }
+  }
+}

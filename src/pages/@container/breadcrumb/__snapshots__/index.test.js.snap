@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should Breadcrumb to match snapshot 1`] = `
+<nav
+  id="id"
+>
+  <ul
+    className="page__container"
+  >
+    <li>
+      <a
+        className="button "
+        onClick={[Function]}
+        type="link"
+      >
+        teste 1
+      </a>
+    </li>
+    <li>
+      <p>
+        teste 2
+      </p>
+    </li>
+  </ul>
+</nav>
+`;

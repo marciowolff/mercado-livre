@@ -1,0 +1,7 @@
+
+/* Desktop Media Queries */
+@mixin desktop {
+  	@media (min-width: #{map-get($layout-breakpoints, xl) + 1px}) {
+    	@content;
+  	}
+}

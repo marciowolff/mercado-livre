@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should Input to match snapshot 1`] = `
+<span
+  className="output-container"
+  id="container--teste"
+>
+  <label
+    className="output--label"
+  >
+    Texto
+     
+    <sub />
+  </label>
+  <span
+    className="output--value"
+    id="teste"
+  >
+    texto output
+  </span>
+</span>
+`;

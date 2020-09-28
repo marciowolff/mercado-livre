@@ -1,0 +1,24 @@
+
+.list {
+  
+  &--cols {
+    .list__li {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 50px;
+  
+      .button {
+        display: inline;
+        font-size: fontsizes(regular, large);
+      }
+  
+      .description {
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: 15px;
+        
+      }
+      
+    }
+  }
+}

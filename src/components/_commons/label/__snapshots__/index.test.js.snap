@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should Input to match snapshot 1`] = `
+<label
+  htmlFor="teste"
+>
+  texto
+</label>
+`;

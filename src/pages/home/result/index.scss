@@ -1,0 +1,41 @@
+@import '../../../App.scss';
+
+.list {
+  &.list--search {
+    width: 100%;
+    li {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+
+      img { width: 150px; }
+
+      .description {
+        display: flex;
+        flex-direction: column;
+        flex: 1 60%;
+        margin: 0 30px 20px;
+        padding-top: 20px;
+
+        .icoShipping { width: 25px; margin-bottom: 10px; }
+
+        #container {
+          &--price {
+            @extend .text--bold;
+            order: 1; 
+            margin-bottom: 10px;
+          }
+          &--title { order: 2; }
+        }
+      }
+
+      aside { flex: 1 10%; padding-top: 20px; }
+
+      &:hover {
+        #container--title {
+          color: color(secondary, base);
+        }
+      }
+    }
+  }
+}

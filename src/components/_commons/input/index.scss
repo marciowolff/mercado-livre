@@ -1,0 +1,18 @@
+
+.input__container {
+  .input {
+    width: 100%;
+    display: flex;
+
+    input { width: 100%; }
+
+    &[type=search] {
+      cursor: pointer;
+
+      &:focus,
+      &:active {
+        outline: none;
+      }
+    }
+  }
+}
